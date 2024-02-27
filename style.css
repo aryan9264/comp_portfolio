@@ -1,0 +1,271 @@
+/* ---------------------------------------------body------------------------------------------------------ */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    font-size: 1.1vw;
+    background-color:black;
+    color:white;
+    cursor: pointer;
+}
+
+.scroll{
+    overflow: auto;
+    height:100vh;
+}
+
+::-webkit-scrollbar{
+    width: 0.3vw;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #8758FF;
+}
+
+body .navlist li a{
+    color: white;
+}
+/* -----------------------------------------------------navigation bar----------------------------------------------- */
+.navbar{
+    background-color: transparent;
+    margin-top: -1vw;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.logo{
+    font-family:monospace;
+    font-size: 1.8vw;
+    margin-top: 2.8vw;
+}
+
+.dot{
+    color: #8758FF;
+}
+
+.navlist{
+    display: flex;
+    margin-top: 3vw;
+}
+
+.navlist li{
+    list-style: none;
+    padding: 1vw;
+    padding-left: 3vw;
+}
+
+.navlist li a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.2vw;
+}
+
+.navlist li :hover{
+    text-decoration-line: underline;
+    text-decoration-color: #8758FF;    
+}
+
+.btn{
+    margin-top: 3.5vw;
+}
+.portfolio{
+    color: white;
+    padding: 0.5vw;
+    border-radius: 25px;
+    font-size: 1.1vw;
+    width: 8vw;
+    border: none;
+    background-color: #8758FF;
+}
+/* -------------------------------------section1---------------------------------------- */
+#section1{
+    height: 35vw;
+}
+
+.user{
+    margin-top: 10vw;
+    margin-left: 10vw;
+}
+
+.heading1{
+    font-size: 4vw;
+}
+
+.heading2{
+    font-size: 3vw;
+}
+
+.inline1{
+    color:#8758FF;
+}
+
+.heading3{
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
+}
+
+.btns{
+    padding-top: 15vw;
+}
+
+.contact{
+    text-decoration: none;
+    color: white;
+    height: 2.5vw;
+    font-size: 1vw;
+    margin: 0.5vw;
+    width: 7vw;
+    border-radius: 5px;
+    border: none;
+    background-color: #8758FF;
+    cursor:pointer;
+}
+.cv{
+    height: 2.5vw;
+    font-size: 1vw;
+    margin-left: 1vw;
+    border-radius: 5px;
+    border-color: #8758FF;
+    color: #8758FF;
+    background-color:inherit;
+    width: 9vw;
+    border-style: solid;
+    cursor:pointer;
+}
+.cv a{
+    text-decoration: none;
+    color: #8758FF;
+}
+
+.photo1{
+    float: right;
+    margin-top: -22vw;
+    margin-right: 18vw;
+    height: 25vw;
+    border-style: none;
+}
+/* -------------------------------------------------section2--------------------------------------------- */
+#section2{
+    height: 48vw;
+}
+
+.About{
+    display: flex; 
+    padding-top: 4vw;
+    padding-left: 4vw;
+}
+
+.part1{
+    font-family: monospace;
+    margin-left: 5vw;
+    margin-top: 4vw;
+}
+.pic{
+    height: 35vw;
+    border-radius: 10px;
+}
+.part2{
+    padding-top: 1vw;
+    margin-left: 5vw;
+}
+
+.about-head{
+    font-family: monospace;
+    font-size: 4vw;
+}
+
+.me{
+    color: #8758FF;
+}
+
+.para{
+    width: 55vw;
+    padding-top: 2.5vw;
+}
+
+.tab-titles{
+    display: flex;
+    margin-top: 3vw;
+}
+
+.tab-links{
+    margin-right: 10vw;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 0.2vw;
+    background:#8758FF ;
+    position:absolute ;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 70%;
+}
+
+.tab-contents{
+    margin-top: 3vw;
+}
+
+.tab-contents ul li{
+    list-style:none;
+    margin: 1vw 0;
+}
+
+.tab-contents ul li span{
+    color: #8758FF;
+    font-size: 1.5vw;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* -----------------------------------------------------section3------------------------------------------- */
+
+
+#section3{
+    height:48vw ;
+}
+
+.service{
+    padding-top: 8vw;
+    padding-left: 42vw;
+}
+.service-head{
+    font-size: 4vw;
+ 
+}
+.s{
+    color: #8758FF;
+}
+.part3{
+    display: flex;
+}
+.card1{
+    background-color: white;
+}
+.card2{
+    background-color: white;
+}
+
+
+

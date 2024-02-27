@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scroll">
+        <nav>
+            <div class="navbar">
+                <span class="logo">
+                    <h1>Aryan<span class="dot">.</span></h1>
+                </span>
+                <span class="navlist">
+                    <li><a href="#section1">Home</a></li>
+                    <li><a href="#section2">About</a></li>
+                    <li><a href="#section3">Services</a></li>
+                </span>
+                <span class="btn">
+                    <a href="#section4"><button class="portfolio" type="submit">Contacte</button></a>
+                </span>
+            </div>
+        </nav>
+
+        <section id="section1">
+            <div class="user">
+                <span class="content">
+                    <div class="content1">
+                        <h1 class="heading1">Hi,</h1><br><br>
+                        <span class="inline"><h1 class="heading2">I'm <span class="inline1"></span></h1></span><br>
+                        <p class="heading3">High level experince in web development knowledge and<br>produce quality work</p>
+                        <span class="btns">
+                            <a href="https://drive.google.com/drive/folders/1NZAnD1XIWbwd9wU-_8OKJ6lCYMWdbpau"><button class="contact" type="submit">Certificates</button></a>
+                            <a href="https://drive.google.com/file/d/19fNcsOJw8Zht64ucPqWhYHHz5dVMbzcQ/view?usp=sharing" download><button class="cv" type="submit">Download CV</button></a>
+                        </span>
+                    </div>  
+                </span>
+            </div>
+            <div class="photo">
+                <img class="photo1" src='bg2.gif' > 
+            </div>
+        </section>
+
+        <section id="section2">
+            <div class="About">
+                <span class="part1">
+                    <img class="pic" src="aryan.jpg">
+                </span>
+                <span class="part2">
+                    <h1 class="about-head">About <span class="me">Me</span></h1>
+                    <div class="para">
+                            My name is Aryan Bhatt. I'm studing in PSIT. Now, I am looking for my first full-time job. I have been working as a freelance web developer for around one years and cooperated with several startups. 
+                            However, I know that I can provide a fresh take and an extraordinary approach to every project. I am always open to challenges and constructive feedback.
+                             I am open-minded and learn new things quickly to become a team player and dedicate all my skills and talents to develop high-quality and unique products.
+                    </div>
+                    <div class="tab-titles">
+                        <li class="tab-links active-link" onclick="opentab('projects')">Projects</li>
+                        <li class="tab-links" onclick="opentab('skills')">Skills</li>
+                        <li class="tab-links" onclick="opentab('education')">Education</li>
+                    </div>
+                    <div class="tab-contents active-tab" id="projects">
+                        <ul>
+                            <li><span>BMI calculator</span><br>Developed using HTML,CSS and Javascript</li>
+                            <li><span>Age Calculator</span><br>Developed using HTML,CSS and Javascript</li>
+                            <li><span>Remedez</span><br>Developed using HTML,CSS,Javascript,ReactJS and Firebase </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web UI</li>
+                            <li><span>Web Development</span><br>Develop Web interfaces</li>
+                            <li><span>Web Designing</span><br>Designing Web interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-current</span><br>Persuaing BTech from PSIT</li>
+                            <li><span>2020</span><br>Cleared Senior secondary from SSDEC Board CBSE </li>
+                            <li><span>2018</span><br>Cleared Higher secondary from SSDEC Board CBSE</li>
+                        </ul>
+                    </div>
+                </span>
+            </div>
+        </section>
+
+        <section id="section3">
+            <div class="service">
+                <h1 class="service-head">Service<span class="s">'s</span></h1>
+                <div class="part3">
+                    <span class="card1">
+
+                    </span>
+                    <span class="card2">
+
+                    </span>
+                    <san class="car3">
+
+                    </san>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="section4">
+            form
+        </section> -->
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".inline1", {
+            strings: ["Aryan Bhatt", "Web Developer", "UI Designer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+</body>
+</html>
